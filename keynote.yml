@@ -1,0 +1,317 @@
+shapes:
+  - name: "Evolution"
+    type: "FigText"
+    options:
+      text: "evolution"
+      x: 11
+      y: 5
+      foreground: "yellow"
+      font: "Big"
+  - name: "Revolution"
+    type: "FigText"
+    options:
+      text: "R"
+      x: 2
+      y: 5
+      background: "yellow"
+      foreground: "black"
+      font: "Big"
+  - name: "BASTA"
+    type: "Text"
+    options:
+      text: "BASTA! Spring 2017"
+      x: "right"
+      y: "bottom"
+      foreground: "yellow"
+  - name: "SaaS"
+    type: "FigText"
+    options:
+      text: "SaaS"
+      x: 11
+      y: 5
+      foreground: "yellow"
+      font: "Big"
+  - name: "WieRect"
+    type: "Rectangle"
+    options:
+      x: 12
+      y: 12
+      width: 40
+      height: 5
+      background: "white"
+      foreground: "black"
+  - name: "CloudBloody"
+    type: "FigText"
+    options:
+      text: "Cloud"
+      x: 11
+      y: 5
+      foreground: "red"
+      font: "Bloody"
+  - name: "Cloud"
+    type: "FigText"
+    options:
+      text: "Cloud"
+      x: 11
+      y: 5
+      foreground: "blue"
+      font: "Big"
+  - name: "PaaS"
+    type: "FigText"
+    options:
+      text: "& PaaS"
+      x: 40
+      y: 5
+      foreground: "yellow"
+      font: "Big"
+  - name: "Serverless1"
+    type: "FigText"
+    options:
+      text: "Micro"
+      x: 1
+      y: 6
+      foreground: "yellow"
+      font: "Train"
+  - name: "Serverless2"
+    type: "FigText"
+    options:
+      text: "services"
+      x: 1
+      y: 12
+      foreground: "yellow"
+      font: "Train"
+  - name: "WieRect2"
+    type: "Rectangle"
+    options:
+      x: 45
+      y: 5
+      width: 40
+      height: 5
+      background: "white"
+      foreground: "black"
+  - name: "Revolution2"
+    type: "FigText"
+    options:
+      text: "Revolution!"
+      x: 2
+      y: 5
+      background: "yellow"
+      foreground: "black"
+      font: "Big"
+
+animations:
+  - name: "Print"
+    type: "Print"
+    options:
+      duration: 1500
+  - name: "ShortPrint"
+    type: "Print"
+    options:
+      duration: 250
+
+slides:
+  - order:
+      - "BASTA"
+      - "Evolution::Print"
+  - order:
+      - "BASTA"
+      - "Evolution"
+      - "Revolution"
+  - shapes:
+      - name: "Line1"
+        type: "Text"
+        options:
+          x: 15
+          y: 13
+          align: "left"
+          background: "white"
+          foreground: "black"
+          text: "Wie entwickeln wir Software?"
+      - name: "Line2"
+        type: "Text"
+        options:
+          x: 15
+          y: 14
+          align: "left"
+          background: "white"
+          foreground: "black"
+          text: "Wie liefern wir Software?"
+      - name: "Line3"
+        type: "Text"
+        options:
+          x: 15
+          y: 15
+          align: "left"
+          background: "white"
+          foreground: "black"
+          text: "Wie nutzen Kunden die Software?"
+    order:
+      - "BASTA"
+      - "Evolution"
+      - "Revolution"
+      - "WieRect"
+      - "Line1::Print"
+      - "Line2::Print"
+      - "Line3::Print"
+  - order:
+      - "BASTA"
+      - "SaaS::Print"
+  - shapes:
+      - name: "Line1"
+        type: "Text"
+        options:
+          x: 15
+          y: 13
+          align: "left"
+          background: "white"
+          foreground: "black"
+          text: "Wie betreiben wir Software?"
+      - name: "Line2"
+        type: "Text"
+        options:
+          x: 15
+          y: 14
+          align: "left"
+          background: "white"
+          foreground: "black"
+          text: "Wie schützen wir Daten?"
+      - name: "Line3"
+        type: "Text"
+        options:
+          x: 15
+          y: 15
+          align: "left"
+          background: "white"
+          foreground: "black"
+          text: "Was kostet die Software?"
+    order:
+      - "BASTA"
+      - "SaaS"
+      - "WieRect"
+      - "Line1::Print"
+      - "Line2::Print"
+      - "Line3::Print"
+  - order:
+      - "BASTA"
+      - "Cloud::Print"
+  - order:
+      - "BASTA"
+      - "CloudBloody"
+  - order:
+      - "BASTA"
+      - "Cloud"
+  - order:
+      - "BASTA"
+      - "Cloud"
+      - "PaaS::Print"
+  - shapes:
+      - name: "Line1"
+        type: "Text"
+        options:
+          x: 15
+          y: 13
+          align: "left"
+          background: "white"
+          foreground: "black"
+          text: "DevOps"
+      - name: "Line2"
+        type: "Text"
+        options:
+          x: 15
+          y: 14
+          align: "left"
+          background: "white"
+          foreground: "black"
+          text: "NoOps"
+      - name: "Line3"
+        type: "Text"
+        options:
+          x: 15
+          y: 15
+          align: "left"
+          background: "white"
+          foreground: "black"
+          text: "Automation"
+    order:
+      - "BASTA"
+      - "Cloud"
+      - "PaaS"
+      - "WieRect"
+      - "Line1::Print"
+      - "Line2::Print"
+      - "Line3::Print"
+  - order:
+      - "BASTA"
+      - "Serverless1::Print"
+      - "Serverless2::Print"
+  - shapes:
+      - name: "Line1"
+        type: "Text"
+        options:
+          x: 48
+          y: 6
+          align: "left"
+          background: "white"
+          foreground: "black"
+          text: "RESTful Web APIs"
+      - name: "Line2"
+        type: "Text"
+        options:
+          x: 48
+          y: 7
+          align: "left"
+          background: "white"
+          foreground: "black"
+          text: "Microservices + HTML5"
+      - name: "Line3"
+        type: "Text"
+        options:
+          x: 48
+          y: 8
+          align: "left"
+          background: "white"
+          foreground: "black"
+          text: "Serverless"
+    order:
+      - "BASTA"
+      - "Serverless1"
+      - "Serverless2"
+      - "WieRect2"
+      - "Line1::Print"
+      - "Line2::Print"
+      - "Line3::Print"
+  - shapes:
+      - name: "Line1"
+        type: "Text"
+        options:
+          x: 15
+          y: 13
+          align: "left"
+          background: "white"
+          foreground: "black"
+          text: "Wie entwickeln wir Software?"
+      - name: "Line2"
+        type: "Text"
+        options:
+          x: 15
+          y: 14
+          align: "left"
+          background: "white"
+          foreground: "black"
+          text: "Wie liefern wir Software?"
+      - name: "Line3"
+        type: "Text"
+        options:
+          x: 15
+          y: 15
+          align: "left"
+          background: "white"
+          foreground: "black"
+          text: "Wie nutzen Kunden die Software?"
+    order:
+      - "BASTA"
+      - "Revolution2::Print"
+      - "WieRect"
+      - "Line1"
+      - "Line2"
+      - "Line3"
