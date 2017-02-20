@@ -6,7 +6,7 @@ At [BASTA! Spring 2017](https://basta.net/) I participated in the keynote togeth
 
 I thought that if I would be the "boring" server guy ;-) surrounded by fancy UIs, I wanted to go all in. I decided to put PowerPoint aside and build my slides with [KittikJS](https://github.com/kittikjs). *KiT* means *Keynote in Terminal*. So the library allows you to you create ASCII presentations in a terminal. Awesome, isn't it?
 
-This docker image contains my keynote slide deck implemented with [YAML](https://de.wikipedia.org/wiki/YAML), Node.js, KittikJS, and Docker.
+This docker image contains my keynote slide deck implemented with KittikJS (CLI), [YAML](https://de.wikipedia.org/wiki/YAML), Node.js, and Docker.
 
 ### Quickstart
 
